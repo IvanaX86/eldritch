@@ -12,12 +12,12 @@ in
 
     modules = [
       ./boot
+      ./disks
       ./hardware
       ./kernel
       ./network
       ./packages
       ./settings
-      ./storage
       ./users
       inputs.home-manager.nixosModules.home-manager
     ];
