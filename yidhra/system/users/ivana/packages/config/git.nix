@@ -12,5 +12,8 @@
       };
       init.defaultBranch = "main";
     };
+    extraConfig = {
+      core.askPass = "ksshaskpass";
+    };
   };
 }
