@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ config, lib, pkgs, ... }:
 {
   services = {
     hardware.openrgb = {
@@ -8,6 +8,11 @@
         port = 6742;
       };
     };
-      printing.enable = true;
+    printing.enable = true;
+    
+    mullvad-vpn = {
+      enable = true;
+      package = pkgs.mullvad-vpn;
+    };
   };
 }

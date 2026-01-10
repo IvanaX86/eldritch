@@ -11,6 +11,7 @@
       homeDirectory = "/home/ivana";
 
       packages = with pkgs; [
+        dig
         firefox
         floorp-bin
         fuzzel
@@ -26,8 +27,10 @@
         pavucontrol
         qview
 	      steam
+        tor-browser
         vesktop
         vlc
+        wl-clipboard
 	      xwayland-satellite
       ];
   };
