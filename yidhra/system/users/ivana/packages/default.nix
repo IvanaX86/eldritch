@@ -26,7 +26,6 @@
         openrgb
         pavucontrol
         qview
-	      steam
         tor-browser
         vesktop
         vlc
