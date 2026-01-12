@@ -23,7 +23,6 @@
         kitty
         krita
         neovim
-        openrgb
         pavucontrol
         qview
         tor-browser
