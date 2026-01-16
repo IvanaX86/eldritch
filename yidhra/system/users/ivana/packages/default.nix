@@ -23,8 +23,10 @@
         kitty
         krita
         neovim
+        obs-studio
         pavucontrol
         qview
+        spotify
         tor-browser
         vesktop
         vlc

@@ -7,6 +7,7 @@
       80    # HTTP
       443   # HTTPS
       8080  # HTTP (alternate)
+      9993  # Zerotier
     ];
     allowedUDPPorts = [
       80    # HTTP

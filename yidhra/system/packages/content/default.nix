@@ -11,5 +11,6 @@
     mullvad-vpn
     vim
     wget
+    wootility
   ];
 }
