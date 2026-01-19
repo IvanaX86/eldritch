@@ -10,8 +10,9 @@
     ];
     initrd.kernelModules = [ "dm-snapshot" ];
 
-    kernelModules = [ "kvm-amd" ];
+    kernelModules = [ "kvm-amd" "hid-tmff2" ];
     extraModulePackages = [ ];
+    blacklistedKernelModules = [ "hid-thrustmaster" ];
     kernelPackages = pkgs.linuxPackages_latest;
   };
 }
