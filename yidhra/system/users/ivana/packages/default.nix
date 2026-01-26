@@ -11,6 +11,7 @@
       homeDirectory = "/home/ivana";
 
       packages = with pkgs; [
+        chromium
         dig
         firefox
         floorp-bin

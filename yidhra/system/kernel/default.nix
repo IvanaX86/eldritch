@@ -10,7 +10,7 @@
     ];
     initrd.kernelModules = [ "dm-snapshot" ];
 
-    kernelModules = [ "kvm-amd" "hid-tmff-new" "hid-tminit-new" "usb-tminit-new" ];
+    kernelModules = [ "hid-tmff-new" "hid-tminit-new" "usb-tminit-new" ]; #kvm-amd
     extraModulePackages = with config.boot.kernelPackages; [
       hid-tmff2
     ];
