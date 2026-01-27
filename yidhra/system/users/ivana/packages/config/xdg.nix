@@ -13,6 +13,11 @@
                 enable = true;
 
                 defaultApplications = {
+                  "text/html" = "floorp.desktop";
+                  "text/plain" = "floorp.desktop";
+                  "application/xhtml+xml" = "floorp.desktop";
+                  "x-scheme-handler/http" = "floorp.desktop";
+                  "x-scheme-handler/https" = "floorp.desktop";
                   "x-scheme-handler/roblox-player" = "org.vinegarhq.Sober.desktop";
                 };
               };

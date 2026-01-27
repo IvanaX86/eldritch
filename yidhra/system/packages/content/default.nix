@@ -14,6 +14,7 @@
     gamescope
     gnupg
     kdePackages.ksshaskpass
+    krita
     linuxConsoleTools
     linuxKernel.packages.linux_6_18.hid-tmff2
     mullvad-vpn
