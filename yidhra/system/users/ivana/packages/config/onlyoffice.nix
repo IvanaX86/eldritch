@@ -1,6 +1,6 @@
 {config, pkgs, ... }:
 {
-  home-manager.users.ivana.programs = {
+  programs = {
     onlyoffice = {
       enable = true;
       settings = {

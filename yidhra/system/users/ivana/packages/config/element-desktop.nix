@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   programs = {
-    obsidian = {
+    element-desktop = {
       enable = true;
     };
   };

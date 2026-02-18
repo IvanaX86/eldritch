@@ -26,6 +26,7 @@
         neovim
         obs-studio
         pavucontrol
+        prismlauncher
         qview
         spotify
         tor-browser

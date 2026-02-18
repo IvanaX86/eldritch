@@ -1,27 +1,20 @@
 { config, pkgs, ... }:
 {
-  home-manager = {
-    users = {
-      ivana = { 
-        programs = {
-          bun = {
-            enable = true;
-            enableGitIntergration = true;
+  programs = {
+    bun = {
+      enable = true;
 
-            settings = {
-              smol = true;
-              loglevel = "debug";
-              telemetry = false;
+      settings = {
+        smol = true;
+        loglevel = "debug";
+        telemetry = false;
 
-              test = {
-                coverage = true;
-                coverageThreshold = 0.9;
-              };
-              install.lockfile = {
-                print = "yarn";
-              };
-            };
-          };
+        test = {
+          coverage = true;
+          coverageThreshold = 0.9;
+        };
+        install.lockfile = {
+          print = "yarn";
         };
       };
     };

@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 {
   programs = {
-    obsidian = {
-      enable = true;
+    zsh = {
+      #enable = true;
     };
   };
 }
