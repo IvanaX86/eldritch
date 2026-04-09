@@ -17,10 +17,13 @@
         imports = [
           ./bun.nix
           ./element-desktop.nix
+          ./easyeffects.nix
           ./floorp.nix
           ./git.nix
           ./obsidian.nix
+          ./obs-studio.nix
           ./onlyoffice.nix
+          ./syncthing.nix
           ./xdg.nix
           ./zsh.nix
         ];

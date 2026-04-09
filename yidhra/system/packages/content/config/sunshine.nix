@@ -2,7 +2,7 @@
 {
   services.sunshine = {
    enable = true;
-   autoStart = true;
+   autoStart = false;
    capSysAdmin = true; # required for Wayland capture
    openFirewall = true;
 };

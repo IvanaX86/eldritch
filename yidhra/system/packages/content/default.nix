@@ -17,6 +17,7 @@
     inputs.claude-desktop.packages.${system}.claude-desktop
     jami
     kdePackages.ksshaskpass
+    kdePackages.kwallet
     krita
     linuxConsoleTools
     linuxKernel.packages.linux_6_18.hid-tmff2
@@ -36,9 +37,9 @@
     unzip
     usbutils
     winetricks
-    wineWowPackages.staging
   ];
   services.udev.packages = with pkgs; [
     oversteer
+    wooting-udev-rules
   ];
 }

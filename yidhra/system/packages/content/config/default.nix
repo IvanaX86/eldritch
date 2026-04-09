@@ -8,7 +8,7 @@
     ./steam.nix
     ./sunshine.nix
     ./qbittorrent.nix
-    ./virtualbox.nix
+    #./virtualbox.nix
     ./zerotier-one.nix
     ./zsh.nix
   ];

@@ -16,4 +16,5 @@
       drivers = [ pkgs.brlaser ];
     };
   };
+  system.nssModules = with pkgs; [ nssmdns ];
 }

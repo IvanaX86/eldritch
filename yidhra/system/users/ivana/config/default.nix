@@ -3,7 +3,7 @@
   users.users = {
     ivana = {
       isNormalUser = true;
-      extraGroups = [ "wheel" ];
+      extraGroups = [ "wheel" "input" ];
       packages = with pkgs; [
         tree
       ];
