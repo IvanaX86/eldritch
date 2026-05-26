@@ -7,6 +7,7 @@
   environment.systemPackages = with pkgs; [
     cage
     corefonts
+    dino
     element-call
     equibop
     evtest
