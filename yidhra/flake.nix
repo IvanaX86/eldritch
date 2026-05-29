@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     
     claude-desktop = {
-      url = "github:k3d3/claude-desktop-linux-flake";
+      url = "github:IvanaX86/claude-desktop-linux-flake?ref=fix/remove-nodepackages-asar"; #"github:k3d3/claude-desktop-linux-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
