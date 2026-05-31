@@ -5,6 +5,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
+    android-tools
     cage
     corefonts
     dino
@@ -17,9 +18,13 @@
     gnupg
     inputs.claude-desktop.packages.${system}.claude-desktop
     jami
+    jmtpfs
+    kdePackages.kio
+    kdePackages.kio-fuse
     kdePackages.ksshaskpass
     kdePackages.kwallet
     krita
+    libmtp
     linuxConsoleTools
     linuxKernel.packages.linux_6_18.hid-tmff2
     mission-center

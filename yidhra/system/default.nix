@@ -21,6 +21,7 @@ in
       ./users
       inputs.home-manager.nixosModules.home-manager
       inputs.nix-gaming.nixosModules.pipewireLowLatency
+      inputs.omnisearch.nixosModules.default
     ];
   };
 }

@@ -2,10 +2,11 @@
   description = "Security is my passion";
   
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    
+    #nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+
     claude-desktop = {
-      url = "github:IvanaX86/claude-desktop-linux-flake?ref=fix/remove-nodepackages-asar"; #"github:k3d3/claude-desktop-linux-flake";
+      url = "github:IvanaX86/claude-desktop-linux-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
@@ -24,10 +25,18 @@
     systems = {
       url = "github:nix-systems/x86_64-linux";
     };
+    omnisearch = {
+      url = "git+https://git.bwaaa.monster/omnisearch";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    wezterm = {
+      url = "github:wezterm/wezterm?dir=nix";
+    };
   };
   outputs = {
     self,
     flake-utils,
+    omnisearch,
     nixpkgs,
     ...
   } @ inputs: {

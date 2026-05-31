@@ -8,11 +8,11 @@
       enable = true;
 
       defaultApplications = {
-        "text/html" = "floorp.desktop";
-        "text/plain" = "floorp.desktop";
-        "application/xhtml+xml" = "floorp.desktop";
-        "x-scheme-handler/http" = "floorp.desktop";
-        "x-scheme-handler/https" = "floorp.desktop";
+        "text/html" = "librewolf.desktop";
+        "text/plain" = "librewolf.desktop";
+        "application/xhtml+xml" = "librewolf.desktop";
+        "x-scheme-handler/http" = "librewolf.desktop";
+        "x-scheme-handler/https" = "librewolf.desktop";
         "x-scheme-handler/roblox-player" = "org.vinegarhq.Sober.desktop";
       };
     };

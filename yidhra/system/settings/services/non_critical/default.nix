@@ -15,6 +15,16 @@
     printing = {
       drivers = [ pkgs.brlaser ];
     };
+    omnisearch = {
+      enable = true;
+    };
+    gvfs = {
+      enable = true;
+    };
+    udisks2 = {
+      enable = true;
+    };
   };
   system.nssModules = with pkgs; [ nssmdns ];
+  services.udev.packages = [ pkgs.libmtp.out ];
 }
