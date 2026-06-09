@@ -36,7 +36,6 @@ in
         kdePackages.dolphin
         kdePackages.kleopatra
         keepassxc
-        kitty
         krita
         neovim
         (olympus.override { celesteWrapper = "steam-run"; })

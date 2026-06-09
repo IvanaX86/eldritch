@@ -9,6 +9,7 @@
     ./sunshine.nix
     ./qbittorrent.nix
     #./virtualbox.nix
+    ./virtualization.nix
     ./weechat.nix
     ./zerotier-one.nix
     ./zsh.nix

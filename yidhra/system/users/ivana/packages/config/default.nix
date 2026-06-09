@@ -24,6 +24,7 @@
           ./element-desktop.nix
           ./easyeffects.nix
           ./floorp.nix
+          ./foot.nix
 	        ./fzf.nix
           ./git.nix
           ./librewolf.nix

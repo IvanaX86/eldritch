@@ -3,7 +3,7 @@
   users.users = {
     ivana = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "input" ];
+      extraGroups = [ "wheel" "input" "libvirtd" ];
       packages = with pkgs; [
         tree
       ];
