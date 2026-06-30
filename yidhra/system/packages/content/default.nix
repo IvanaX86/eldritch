@@ -40,7 +40,6 @@
     pv
     python3
     sbclPackages.cl-freetype2
-    signal-desktop
     simplex-chat-desktop
     teams-for-linux
     vim

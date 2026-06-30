@@ -10,6 +10,7 @@
     ./qbittorrent.nix
     #./virtualbox.nix
     ./virtualization.nix
+    ./websurfx.nix
     ./weechat.nix
     ./zerotier-one.nix
     ./zsh.nix

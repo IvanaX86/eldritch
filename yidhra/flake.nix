@@ -1,6 +1,6 @@
 {
   description = "Security is my passion";
-  
+
   inputs = {
     #nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -29,9 +29,9 @@
       url = "git+https://git.bwaaa.monster/omnisearch";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    wezterm = {
-      url = "github:wezterm/wezterm?dir=nix";
-    };
+    #wezterm = {
+      #url = "github:wezterm/wezterm?dir=nix";
+    #};
   };
   outputs = {
     self,

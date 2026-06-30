@@ -20,12 +20,14 @@
         };
 
         imports = [
+          ./bat.nix
           ./bun.nix
           ./element-desktop.nix
           ./easyeffects.nix
           ./floorp.nix
           ./foot.nix
 	        ./fzf.nix
+          ./ghostty.nix
           ./git.nix
           ./librewolf.nix
 	        ./lsd.nix
@@ -33,7 +35,6 @@
           ./obs-studio.nix
           ./onlyoffice.nix
           ./syncthing.nix
-          ./wezterm.nix
           ./xdg.nix
           ./zsh.nix
         ];

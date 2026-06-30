@@ -4,7 +4,7 @@ LibreWolfCfg = pkgs.writeText "mozilla.cfg" ''
     // comment
     try {
       const { AboutNewTab } = ChromeUtils.importESModule("resource:///modules/AboutNewTab.sys.mjs");
-      AboutNewTab.newTabURL = "http://localhost:8087";
+      AboutNewTab.newTabURL = "http://localhost:8080";
 // test
       const Services = globalThis.Services || ChromeUtils.importESModule("resource://gre/modules/Services.sys.mjs").Services;
       const { BrowserWindowTracker } = ChromeUtils.importESModule("resource:///modules/BrowserWindowTracker.sys.mjs");
@@ -40,6 +40,11 @@ in
       settings = {
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         "extensions.autoDisableScopes" = 0;
+        "extensions.formautofill.addresses.enabled" = false;
+        "extensions.formautofill.creditCards.enabled" = false;
+        "extensions.formautofill.heuristics.enabled" = false;
+        "browser.formfill.enable" = false;
+        "signon.autofillForms" = false;
       };
 
       profiles = {
@@ -57,22 +62,22 @@ in
         DisableAppUpdate = true;
         
         Homepage = {
-          URL = "http://localhost:8087";
+          URL = "http://localhost:8080";
           StartPage = "homepage";
         };
 
         SearchEngines = {
-          default = "omnisearch";
+          default = "Websurfx";
           Remove = [
             "MetaGer"
             "Searx Belgium"
           ];
           Add = [
             { 
-              Name = "omnisearch";
-              URLTemplate = "http://localhost:8087/search?q={searchTerms}";
+              Name = "Websurfx";
+              URLTemplate = "http://localhost:8080/search?q={searchTerms}";
               Method = "GET";
-              IconURL = "http://localhost:8087/static/favicon.ico";
+              IconURL = "http://localhost:8080/static/favicon.ico";
           }];
         };
         NewTabPage = false;

@@ -4,12 +4,19 @@
     zsh = {
       enable = true;
       initContent = lib.mkMerge [
-       (lib.mkOrder 500 ("
+        (lib.mkOrder 500 ("
             PS1='%F{199}%n%f%F{163}@%f%F{196}%m%f %F{202}|%f %F{207}%B%~%b%f %F{201}❯%f '
-	    bindkey -v
+	          bindkey -v
           "
-	  + builtins.readFile ./zsh/nixos-rebuild-flake-completion.zsh
-	))
+	        + builtins.readFile ./zsh/nixos-rebuild-flake-completion.zsh
+	      ))
+        (lib.mkOrder 1500 ("
+            function zvm_after_init() {
+              bindkey '^[[A' history-substring-search-up
+              bindkey '^[[B' history-substring-search-down
+            }
+          "
+        ))
       ];
 
       shellAliases = {

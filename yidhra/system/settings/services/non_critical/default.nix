@@ -15,9 +15,9 @@
     printing = {
       drivers = [ pkgs.brlaser ];
     };
-    omnisearch = {
-      enable = true;
-    };
+    #omnisearch = {
+    #  enable = true;
+    #};
     gvfs = {
       enable = true;
     };
