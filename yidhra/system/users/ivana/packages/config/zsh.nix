@@ -4,29 +4,31 @@
     zsh = {
       enable = true;
       initContent = lib.mkMerge [
+        (lib.mkOrder 100 ("
+            ZVM_INIT_MODE=sourcing
+            zvm_after_init_commands+=(
+              'bindkey \"^[[A\" history-beginning-search-backward'
+              'bindkey \"^[[B\" history-beginning-search-forward'
+            )
+          "
+        ))
         (lib.mkOrder 500 ("
             PS1='%F{199}%n%f%F{163}@%f%F{196}%m%f %F{202}|%f %F{207}%B%~%b%f %F{201}❯%f '
 	          bindkey -v
           "
 	        + builtins.readFile ./zsh/nixos-rebuild-flake-completion.zsh
 	      ))
-        (lib.mkOrder 1500 ("
-            function zvm_after_init() {
-              bindkey '^[[A' history-substring-search-up
-              bindkey '^[[B' history-substring-search-down
-            }
-          "
-        ))
+
       ];
 
       shellAliases = {
       	"cat" = "bat";
-	"ls" = "lsd -v --group-directories-first --total-size";
+	      "ls" = "lsd -v --group-directories-first --total-size";
         "lsa" = "lsd -va --group-directories-first --total-size";
-	"lsaa" = "lsd -vail --group-directories-first --total-size ";
+	      "lsaa" = "lsd -vail --group-directories-first --total-size ";
         "lsg" = "lsd -v --git --group-directories-first --total-size";
         "lsga" = "lsd -va --git --group-directories-first --total-size";
-	"tree" = "lsd --tree --depth 5";
+	      "tree" = "lsd --tree --depth 5";
         "grep" = "grep --color=auto";
         "diff" = "diff --color=auto";
         "ip" = "ip -c=auto";
@@ -40,7 +42,7 @@
       };
 
       historySubstringSearch = {
-        enable = true;
+        #enable = true;
       };
       
       setOptions = [

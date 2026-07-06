@@ -1,6 +1,7 @@
 {
   imports = [
     ./flatpak.nix
+    ./fontconfig.nix
     ./gnupg.nix
     ./ksshaskpass.nix
     ./openrgb.nix

@@ -10,7 +10,6 @@
     bison
     cage
     corefonts
-    dino
     element-call
     equibop
     evtest

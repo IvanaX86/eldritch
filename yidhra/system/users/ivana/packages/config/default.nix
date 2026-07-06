@@ -24,10 +24,10 @@
           ./bun.nix
           ./element-desktop.nix
           ./easyeffects.nix
-          ./floorp.nix
+          #./floorp.nix
           ./foot.nix
 	        ./fzf.nix
-          ./ghostty.nix
+          #./ghostty.nix
           ./git.nix
           ./librewolf.nix
 	        ./lsd.nix
@@ -36,6 +36,7 @@
           ./onlyoffice.nix
           ./syncthing.nix
           ./xdg.nix
+          ./zellij.nix
           ./zsh.nix
         ];
       };
