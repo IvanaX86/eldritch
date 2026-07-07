@@ -36,7 +36,6 @@
         kdePackages.kleopatra
         keepassxc
         krita
-        neovim
         (olympus.override { celesteWrapper = "steam-run"; })
         pavucontrol
         praat

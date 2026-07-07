@@ -31,6 +31,7 @@
           ./git.nix
           ./librewolf.nix
 	        ./lsd.nix
+          ./neovim.nix
           ./obsidian.nix
           ./obs-studio.nix
           ./onlyoffice.nix

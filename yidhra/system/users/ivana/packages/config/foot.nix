@@ -1,4 +1,4 @@
-{config, pkgs, ... }:
+{ config, pkgs, ... }:
 {
   programs = {
     foot = {
@@ -26,6 +26,11 @@
         colors-dark = {
           foreground = "fc2171";
           background = "000000";
+
+          regular0   = "000000";
+          bright0    = "828282";
+          regular7   = "08e0e0";
+          bright7    = "0afcfc";
         };
       };
     };
