@@ -10,7 +10,11 @@
 
       extraConfig = ''
         show_startup_tips false
-
+        
+        layout {
+          pane size="90%"
+          pane size="10%"
+        }
         keybinds {
           normal {
             unbind "Ctrl g" "Ctrl p" "Ctrl h" "Ctrl s" "Ctrl o" "Alt n" "Alt f"
@@ -71,8 +75,26 @@
       '';
 
       settings = {
-        
+        default_layout = "default_split"; 
       };
+    };
+  };
+  xdg = {
+    configFile = {
+      "zellij/layouts/default_split.kdl".text = ''
+        layout {
+          pane size=1 borderless=true {
+            plugin location="tab-bar"
+          }
+
+          pane size="90%"
+          pane size="10%"
+
+          pane size=1 borderless=true {
+            plugin location="status-bar"
+          }
+        }
+      '';
     };
   };
 }
